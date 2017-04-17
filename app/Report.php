@@ -19,7 +19,7 @@ class Report extends Model
   protected $primaryKey = 'id';
   // protected $guarded = [];
   // protected $hidden = ['id'];
-  protected $fillable = ['title', 'body', 'date'];
+  protected $fillable = ['title', 'body', 'date', 'was_clean'];
   public $timestamps = true;
 
 }

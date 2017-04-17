@@ -12,7 +12,7 @@ class ReportCrudController extends CrudController {
         $this->crud->setRoute("admin/report");
         $this->crud->setEntityNameStrings('report', 'reports');
 
-        $this->crud->setColumns(['title', 'body', 'date']);
+        $this->crud->setColumns(['date', 'was_clean', 'body']);
 
         $this->crud->addField([
           'name' => 'title',
@@ -29,6 +29,12 @@ class ReportCrudController extends CrudController {
           'name' => 'date',
           'label' => "Report date",
           'type' => 'date'
+        ]);
+
+        $this->crud->addField([
+          'name' => 'was_clean',
+          'label' => "Report status",
+          'type' => 'checkbox'
         ]);
 
     }
