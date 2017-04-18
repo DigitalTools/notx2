@@ -36,7 +36,7 @@
                     <div class="progress-bar" style="width: 10%"></div>
                   </div>
                   <span class="progress-description">
-                    2 days of 21
+                    {{ $ddata['was_clean_count'] }} days of 21
                   </span>
                 </div>
             </div>
