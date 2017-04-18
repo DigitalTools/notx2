@@ -31,7 +31,7 @@
                 </span>
                 <div class="info-box-content">
                   <span class="info-box-text">Clean days</span>
-                  <span class="info-box-number">2</span>
+                  <span class="info-box-number">{{ $ddata['was_clean_count'] }}</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 10%"></div>
                   </div>
